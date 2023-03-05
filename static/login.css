@@ -3,18 +3,21 @@ body{background-color: #f2635f;}
 .sider{border-left: solid 0px;
     background-color: white;
     border-radius:10px;
-    height: 100%;
-    width: 500px;
+    height: 450px;
+    width: 600px;
     padding-bottom: 30px;
+    margin-top: 6%;
      }     
 
-.move{justify-content: center;}  
+.move{ display: flex;
+       justify-content: center;
+       }  
 
 
 .lp{color: #f2635f; 
  font-weight: 900;
  text-align: center;
- font-size: 20px;
+ font-size: 30px;
  font-family: 'Times New Roman', Times, serif;}
 
 .m{margin-left: 120px;}
@@ -46,17 +49,433 @@ body{background-color: #f2635f;}
 #button1{width: 240px;
    height: 30px;
    background-color:#f2635f;
-   margin-left: 43px;
-   margin-top: 18px;
+   margin-left: 142px;
+   margin-top: 30px;
    border: 1px solid #f2635f;;
    border-radius:4px 4px 4px 4px;
    color: white;
-   box-shadow:  0px 10px 18px   #f2635f;}    
+   box-shadow:  0px 10px 18px   #f2635f;} 
+
+   .fm{margin-left:50px ;}
+   
+   #username{margin-left: 120px;}
+   #password{margin-left: 120px;}
 
 
 
-   @media screen and (max-width:820px) {
-       .bd{display: none;} 
-       .mb{display: block;}
+   @media screen and (min-width:820px) {
+    .m{margin-left: 178px;}
      
     }
+
+    @media screen and (max-width:1030px) {
+       .m{margin-left: 170px;}
+       #username{margin-left: 60px;}
+       #password{margin-left: 60px;}
+       #button1{margin-left: 80px;}
+       .m{margin-left:140px ;}
+       .sider{margin-top: 8%;}
+        
+       }
+
+@media screen and (max-width:1030px) {
+       .m{margin-left: 170px;}
+       #username{margin-left: 50px;}
+       #password{margin-left: 50px;}
+       #button1{margin-left: 70px;}
+       .m{margin-left:130px ;}
+       .sider{margin-top: 8%;}
+              
+       }
+
+   @media screen and (max-width:980px) {
+       .sider{margin-top: 8%;}
+       #username{margin-left: 40px;}
+       #password{margin-left: 40px;}
+       #button1{margin-left: 60px;}
+              
+       }
+
+       @media screen and (max-width:960px) {
+              .sider{margin-top: 8%;}
+              #username{margin-left: 30px;}
+              #password{margin-left: 30px;}
+              #button1{margin-left: 50px;}
+                     
+              }
+
+       @media screen and (max-width:920px) {
+              .sider{margin-top: 8%;}
+              #username{margin-left: 20px;}
+              #password{margin-left: 20px;}
+              #button1{margin-left: 40px;}
+                     
+              }          
+
+       @media screen and (max-width:880px) {
+              .sider{margin-top: 8%;}
+              #username{margin-left: 10px;}
+              #password{margin-left: 10px;}
+              #button1{margin-left: 30px;}
+              .lp{font-size: 25px;}
+                     
+              }        
+              
+       @media screen and (max-width:880px) {
+              .sider{margin-top: 8%;}
+              #username{margin-left: 10px;}
+              #password{margin-left: 10px;}
+              #button1{margin-left: 30px;}
+              .lp{font-size: 25px;}
+              .m{margin-left: 115px;}
+                     
+              }     
+              
+       /* @media screen and (max-width:840px) {
+              .sider{margin-top: 8%;}
+              #username{margin-left: 5px;}
+              #password{margin-left: 5px;}
+              #button1{margin-left: 20px;}
+              .lp{font-size: 25px;}
+              .m{margin-left: 115px;}
+                     
+              }   */
+
+       @media screen and (max-width:1050px) {
+              .sider{margin-top: 15%;
+                     height: 550px;}
+              #input3{width: 510px;
+                            height: 35px;}
+              #input4{width: 510px;
+                            height: 35px;}
+              #button1{margin-left: 160px;
+                            height: 30px;
+                            margin-top: 50px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 70px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 25px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              } 
+              
+
+       @media screen and (max-width:950px) {
+              .sider{margin-top: 15%;
+                     height: 700px;}
+              #input3{width: 510px;
+                            height: 55px;}
+              #input4{width: 510px;
+                            height: 55px;}
+              #button1{margin-left: 160px;
+                            height: 45px;
+                            margin-top: 50px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 70px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 25px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              } 
+
+       @media screen and (max-width:900px) {
+              .sider{margin-top: 15%;
+                     height: 700px;}
+              #input3{width: 510px;
+                            height: 55px;}
+              #input4{width: 510px;
+                            height: 55px;}
+              #button1{margin-left: 160px;
+                            height: 45px;
+                            margin-top: 50px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 70px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 25px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              } 
+
+       @media screen and (max-width:850px) {
+              .sider{margin-top: 15%;
+                     height: 700px;}
+              #input3{width: 510px;
+                            height: 55px;}
+              #input4{width: 510px;
+                            height: 55px;}
+              #button1{margin-left: 160px;
+                            height: 45px;
+                            margin-top: 50px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 70px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 25px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              } 
+       
+              
+       @media screen and (max-width:800px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 510px;
+                            height: 40px;}
+              #input4{width: 510px;
+                            height: 40px;}
+              #button1{margin-left: 160px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              }      
+
+      
+
+       @media screen and (max-width:750px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 510px;
+                            height: 40px;}
+              #input4{width: 510px;
+                            height: 40px;}
+              #button1{margin-left: 160px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              }            
+
+       @media screen and (max-width:700px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 510px;
+                            height: 40px;}
+              #input4{width: 510px;
+                            height: 40px;}
+              #button1{margin-left: 160px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              }      
+
+       @media screen and (max-width:650px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 490px;
+                            height: 40px;}
+              #input4{width: 490px;
+                            height: 40px;}
+              #button1{margin-left: 140px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              }                  
+
+       @media screen and (max-width:600px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 450px;
+                            height: 40px;}
+              #input4{width: 450px;
+                            height: 40px;}
+              #button1{margin-left: 140px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              }                               
+
+               
+       @media screen and (max-width:550px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 420px;
+                            height: 40px;}
+              #input4{width: 420px;
+                            height: 40px;}
+              #button1{margin-left: 110px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 28px;}
+              #password{margin-left: 28px;}
+              
+              #label4{font-size: 13px;}
+              }                             
+              
+       @media screen and (max-width:500px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 360px;
+                            height: 40px;}
+              #input4{width: 360px;
+                            height: 40px;}
+              #button1{margin-left: 60px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 15px;}
+              #password{margin-left: 15px;}
+              
+              #label4{font-size: 13px;}
+              }                      
+              
+       @media screen and (max-width:450px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 320px;
+                            height: 40px;}
+              #input4{width: 320px;
+                            height: 40px;}
+              #button1{margin-left: 53px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+
+              #username{margin-left: 15px;}
+              #password{margin-left: 15px;}
+              
+              #label4{font-size: 13px;}
+              }                     
+              
+       @media screen and (max-width:400px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 300px;
+                            height: 40px;}
+              #input4{width: 300px;
+                            height: 40px;}
+              #button1{margin-left: 25px;
+                            height: 35px;
+                            margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+              
+              #label4{font-size: 13px;}
+              }            
+
+       @media screen and (max-width:380px) {
+              .sider{margin-top: 15%;
+                     height: 600px;}
+              #input3{width: 280px;
+                       height: 40px;}
+              #input4{width: 280px;
+                      height: 40px;}
+              #button1{margin-left: 25px;
+                       height: 35px;
+                       margin-top: 40px;}
+              .lp{font-size: 40px;}
+              .m{margin-left: 50px;}
+              .fm{margin-left: 20px;}
+              #password{margin-top: 20px;}
+              .log{width: 30%;}
+              .log1{width: 28%;}
+              #label3{font-size: 13px;}
+              
+              #label4{font-size: 13px;}
+              }            
+                            
+              
+          
+    
