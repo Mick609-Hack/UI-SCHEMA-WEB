@@ -1,7 +1,74 @@
-body{background-color: white;}
+body{background-color: rgb(190, 176, 176);
+    padding-bottom: 50px;
+height: 100%;
+width: 100%;}
 
 .log{width: 30%;}
-.log1{width: 28%;}
-.m{margin-left: 30px;}
+.log1{width: 16%;}
+.m{margin-left: 10px;}
 
-.body{background-color: #f2635f;}
+#cb{font-size: 40px;
+    height: 16px;
+    width: 70px;}
+
+
+
+  
+    
+
+.header{background-color: rgb(106, 100, 100);
+    padding: 2px;
+        }
+.bgdesktop{background-image: url("./images/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg");
+      background-repeat: no-repeat;
+     background-size: 100%; 
+     justify-content:  center;    
+      
+        /* background-position: center ;*/}
+
+.word{padding: 5%;
+      font-size: 50px;}        
+
+      
+
+      #button1{width: 280px;
+        height: 30px;
+        background-color:  white; 
+        margin-top: 30px;
+        border: 1px solid rgb(106, 100, 100);
+        border-radius:4px 4px 4px 4px;
+        color:rgb(106, 100, 100) ; 
+        box-shadow:  0px 10px 18px   rgb(106, 100, 100);
+        } 
+
+        .bt{justify-content: center;}
+
+        .res{justify-content: center;
+             display: flex;}
+
+        @media screen and (max-width:850px) {
+            .log{width: 50%;}
+            .log1{width: 46%;}        
+
+        }     
+
+        @media screen and (max-width:540px) {
+            .log{width: 65%;}
+            .log1{width: 56%;}        
+
+        }     
+
+        @media screen and (max-width:390px) {
+            .word{font-size: 22px;}
+            .log{width: 120%;}
+            .log1{width: 116%;}
+
+        }
+
+        @media screen and (max-width:450px) {
+            .word{font-size: 22px;}
+            .log{width: 85%;}
+            .log1{width: 76%;}
+
+        }
+      

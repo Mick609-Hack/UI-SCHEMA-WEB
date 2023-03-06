@@ -1,7 +1,16 @@
-body{background-color: #f2635f;}
+ /* body{background-color: white;}  */
+
+.bgdesktop{ background-image: url("./images/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+      /* background-position: center ;*/
+       }
+
+body,html{height: 100%;}
 
 .sider{border-left: solid 0px;
-    background-color: white;
+     background:linear-gradient(to right, rgb(190, 176, 176), rgb(106, 100, 100), rgb(190, 176, 176 )) ; 
+    border: solid 1px white;
     border-radius:10px;
     height: 450px;
     width: 600px;
@@ -14,7 +23,7 @@ body{background-color: #f2635f;}
        }  
 
 
-.lp{color: #f2635f; 
+.lp{color:white ; 
  font-weight: 900;
  text-align: center;
  font-size: 30px;
@@ -27,34 +36,34 @@ body{background-color: #f2635f;}
 #input3{width: 280px;
    height: 30px;
    margin-top: 5px;
-   border: lightgray 1px solid;
+   border: rgb(190, 176, 176) 1px solid;
    border-radius:4px 4px 4px 4px;}
 
 #input3::placeholder{padding-left: 15px;}
 
-#label3{color: #f2635f;
+#label3{color: white;
        font-size: 10px;}
 
-#label4{color: #f2635f;
+#label4{color: white;
        font-size: 10px;}
 
 #input4{width: 280px;
        height: 30px;
        margin-top: 5px;
-       border: lightgray 1px solid;
+       border: rgb(190, 176, 176)  1px solid;
        border-radius:4px 4px 4px 4px;}
 
 #input4::placeholder{padding-left: 15px;}    
 
 #button1{width: 240px;
    height: 30px;
-   background-color:#f2635f;
+   background-color:  white; 
    margin-left: 142px;
    margin-top: 30px;
-   border: 1px solid #f2635f;;
+   border: 1px solid rgb(190, 176, 176);
    border-radius:4px 4px 4px 4px;
-   color: white;
-   box-shadow:  0px 10px 18px   #f2635f;} 
+   color: rgb(190, 176, 176); 
+   } 
 
    .fm{margin-left:50px ;}
    
@@ -75,6 +84,7 @@ body{background-color: #f2635f;}
        #button1{margin-left: 80px;}
        .m{margin-left:140px ;}
        .sider{margin-top: 8%;}
+       body,html{height: 100%;}
         
        }
 
@@ -455,14 +465,14 @@ body{background-color: #f2635f;}
               #label4{font-size: 13px;}
               }            
 
-       @media screen and (max-width:380px) {
+       @media screen and (max-width:390px) {
               .sider{margin-top: 15%;
                      height: 600px;}
               #input3{width: 280px;
                        height: 40px;}
               #input4{width: 280px;
                       height: 40px;}
-              #button1{margin-left: 25px;
+              #button1{margin-left: 35px;
                        height: 35px;
                        margin-top: 40px;}
               .lp{font-size: 40px;}

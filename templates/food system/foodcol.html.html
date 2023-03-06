@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../static/food.css">
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'food.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row body">
+            <h3 class="ml-2" style="color: #f2635f">Hungry? order and eat</h3>
+            <div class="m mt-3">
+                <img class="log" src="{% static 'home_image/family-restaurant-male-clerk-svgrepo-com.svg' %}" alt="">
+                <img class="log1" src="{% static 'home_image/restaurant-plate-svgrepo-com.svg' %}" alt="">
+                <img class="log" src="{% static 'home_image/family-restaurant-female-clerk-svgrepo-com.svg' %}" alt="">
+            </div>
+        </div>
+        <div>
+            <h2 style="color: #f2635f" ><center>WAVELENGTH MENU</center></h2>
+            <!-- <h3 style="color: #f2635f;">Breakfast:</h3> -->
+        </div>
+        
+      <form method="POST" action="{% url 'create_order' %}">
+        {% csrf_token %} 
+        
+        <div class="row">
+          {% for item in items %}
+    
+             <div class="col-md-6 col-sm-12  mt-4 pb-3 box">
+                <div class="card res ml-4" style="width: 19rem;">
+                    <img src="{% static 'home_image/'|add:item.Image %}" height="212px" alt="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.name}}</h5>
+                    
+                        <p class="cardtext"><ul class="ml-3">
+                                                <li>Price: {{item.price}}</li>
+                                                {% if item.price > 1000 %}
+                                                    <li>Comes With A Free Bottle Water</li>
+                                                {% else %}
+
+                                                {% endif %}
+                                             
+                                            </ul> 
+                        </p>
+                        <p class='selection"'>
+                            <span style="font-size: 23px; display: inline-block;">SELECT </span> 
+                             {% comment %} <input type="checkbox" value="{{item.name}}" name="food[]" id=""> {% endcomment %}
+                             <div class="quantity">
+                                <button class="btn minus-btn disabled" type="button" data-item-id="{{ item.id }}">-</button>
+                                <input type="number" min="0" max="10" value="0" name="quantity-{{ item.id }}" class="form-control quantity-input">
+                                <button class="btn plus-btn" type="button" data-item-id="{{ item.id }}">+</button>
+                              </div>
+                
+                        </p>
+                    </div>
+                </div>
+         
+            </div>
+
+            {% endfor %}
+
+        </div>
+       
+    </div>
+    <div class="row">
+        {{order_details.}}
+
+     
+     <div  style="margin-buttom : 40px;" class="col-md-12 text-center d-flex align-items-center">
+        <button id="order-btn" type="submit" style="background:#f2635f; border:none; display:inline-block; margin-bottom: 30px;" class="btn btn-lg btn-primary">Order</button>
+      </div>
+    </div>
+</form>
+<script>
+    // Increment/decrement button code
+const plusBtns = document.querySelectorAll(".plus-btn");
+const minusBtns = document.querySelectorAll(".minus-btn");
+const quantityInputs = document.querySelectorAll(".quantity-input");
+
+plusBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const itemId = btn.dataset.itemId;
+    const quantityInput = document.querySelector(`input[name=quantity-${itemId}]`);
+    const currentValue = parseInt(quantityInput.value);
+    const maxValue = parseInt(quantityInput.getAttribute("max"));
+    if (currentValue < maxValue) {
+      quantityInput.value = currentValue + 1;
+      btn.classList.remove("disabled");
+      quantityInput.classList.remove("is-invalid");
+    } else {
+      btn.classList.add("disabled");
+      quantityInput.classList.add("is-invalid");
+    }
+  });
+});
+
+minusBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const itemId = btn.dataset.itemId;
+    const quantityInput = document.querySelector(`input[name=quantity-${itemId}]`);
+    const currentValue = parseInt(quantityInput.value);
+    if (currentValue > 0) {
+      quantityInput.value = currentValue - 1;
+      btn.classList.remove("disabled");
+      quantityInput.classList.remove("is-invalid");
+    } else {
+      btn.classList.add("disabled");
+      quantityInput.classList.add("is-invalid");
+    }
+  });
+});
+</script>
+    
+    
+</body>
+
+</html> 
