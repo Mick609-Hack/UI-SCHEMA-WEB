@@ -1,6 +1,10 @@
  /* body{background-color: white;}  */
 
-.bgdesktop{ 
+.bgdesktop{ background-image: url("./images/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       padding-bottom: 30px;
+
       /* background-position: center ;*/
        }
 
@@ -9,15 +13,13 @@ body,html{height: 100%;}
 .sider{border-left: solid 0px;
      /* background:linear-gradient(to right, rgb(190, 176, 176), rgb(106, 100, 100), rgb(190, 176, 176 )) ;  */
     border: solid 1px white;
-    background-image: url("./images/try2.jpg");
-       background-repeat: no-repeat;
-       background-size: cover;
-    /* background-color: rgb(106, 100, 100); */
+    background-color:rgb(190, 176, 176);
     border-radius:10px;
     height: 450px;
     width: 600px;
     padding-bottom: 30px;
     margin-top: 6%;
+    
      }     
 
 .move{ display: flex;
@@ -37,11 +39,16 @@ body,html{height: 100%;}
 
 #input3{width: 280px;
    height: 30px;
-   margin-top: 5px;
-   border: rgb(190, 176, 176) 1px solid;
-   border-radius:4px 4px 4px 4px;}
+   margin-top: 0px;
+   background-color:rgb(190, 176, 176) ;
+   border-bottom: white solid 2px;
+   border-top:rgb(190, 176, 176) ;
+   border-left:rgb(190, 176, 176) ;
+   border-right:rgb(190, 176, 176) ;
+   }
 
-#input3::placeholder{padding-left: 15px;}
+#input3::placeholder{padding-left: 15px;
+                      color: white;}
 
 #label3{color: white;
        font-size: 10px;}
@@ -51,11 +58,17 @@ body,html{height: 100%;}
 
 #input4{width: 280px;
        height: 30px;
-       margin-top: 5px;
-       border: rgb(190, 176, 176)  1px solid;
-       border-radius:4px 4px 4px 4px;}
+       margin-top: 0px;
+       background-color:rgb(190, 176, 176) ;
+       border-bottom: white solid 2px;
+       border-top:rgb(190, 176, 176) ;
+       border-left:rgb(190, 176, 176) ;
+       border-right:rgb(190, 176, 176) ;
+       
+       }
 
-#input4::placeholder{padding-left: 15px;}    
+#input4::placeholder{padding-left: 15px;
+                     color: white;}    
 
 #button1{width: 240px;
    height: 30px;
@@ -63,14 +76,15 @@ body,html{height: 100%;}
    margin-left: 142px;
    margin-top: 30px;
    border: 1px solid rgb(190, 176, 176);
-   border-radius:4px 4px 4px 4px;
+   border-radius:15px;
    color: rgb(190, 176, 176); 
    } 
 
    .fm{margin-left:50px ;}
    
    #username{margin-left: 120px;}
-   #password{margin-left: 120px;}
+   #password{margin-left: 120px;
+             margin-top: 20px;}
 
 
 
@@ -83,11 +97,17 @@ body,html{height: 100%;}
        .m{margin-left: 170px;}
        #username{margin-left: 60px;}
        #password{margin-left: 60px;}
-       #button1{margin-left: 80px;}
+       #button1{margin-left: 80px;
+              border-radius: 10px; }
+       #input3, #input4{ background-color:rgb(190, 176, 176) ;
+                         border-bottom: white solid 2px;}
+
+       #input3::placeholder{color: white;}
+       #input4::placeholder{color: white;}  
+                             
        .m{margin-left:140px ;}
        .sider{margin-top: 8%;}
        body,html{height: 100%;}
-        
        }
 
 @media screen and (max-width:1030px) {
@@ -426,9 +446,19 @@ body,html{height: 100%;}
               .sider{margin-top: 15%;
                      height: 600px;}
               #input3{width: 320px;
-                            height: 40px;}
+                     height: 40px;
+                     background-color:rgb(190, 176, 176) ;
+                     border-bottom: white solid 2px;}
+
               #input4{width: 320px;
-                            height: 40px;}
+                     height: 40px;
+                     background-color:rgb(190, 176, 176) ;
+                     border-bottom: white solid 2px;}
+              #username{margin-top: 40px;}        
+
+              #input3::placeholder{color: white;}
+              #input4::placeholder{color: white;}        
+
               #button1{margin-left: 53px;
                             height: 35px;
                             margin-top: 40px;}
@@ -468,19 +498,34 @@ body,html{height: 100%;}
               }            
 
        @media screen and (max-width:390px) {
-              .sider{margin-top: 15%;
+              .sider{margin-top: 0;
                      height: 600px;}
               #input3{width: 280px;
-                       height: 40px;}
+                       height: 40px;
+                       margin-top: 0px;
+                       background-color:rgb(190, 176, 176) ;
+                       border-bottom: white solid 2px;
+                      }
               #input4{width: 280px;
-                      height: 40px;}
+                      height: 40px;
+                      margin-top: 0px;
+                      background-color:rgb(190, 176, 176) ;
+                      border-bottom: white solid 2px;}
+              #username{margin-top: 40px;}        
+
+              #input3::placeholder{color: white;}
+              #input4::placeholder{color: white;}  
+                    
+
               #button1{margin-left: 35px;
                        height: 35px;
-                       margin-top: 40px;}
+                       margin-top: 40px;
+                       border-radius: 10px;
+                     }
               .lp{font-size: 40px;}
               .m{margin-left: 50px;}
               .fm{margin-left: 20px;}
-              #password{margin-top: 20px;}
+              #password{margin-top: 30px;}
               .log{width: 30%;}
               .log1{width: 28%;}
               #label3{font-size: 13px;}
