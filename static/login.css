@@ -1,8 +1,6 @@
  /* body{background-color: white;}  */
 
-.bgdesktop{ background-image: url("./images/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg");
-       background-repeat: no-repeat;
-       background-size: cover;
+.bgdesktop{ 
       /* background-position: center ;*/
        }
 
@@ -11,7 +9,10 @@ body,html{height: 100%;}
 .sider{border-left: solid 0px;
      /* background:linear-gradient(to right, rgb(190, 176, 176), rgb(106, 100, 100), rgb(190, 176, 176 )) ;  */
     border: solid 1px white;
-    background-color: #410b14;
+    background-image: url("./images/try2.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+    /* background-color: rgb(106, 100, 100); */
     border-radius:10px;
     height: 450px;
     width: 600px;

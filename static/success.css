@@ -1,0 +1,42 @@
+.header{background-color: rgb(106, 100, 100);
+    padding: 2px;
+        }
+
+body{background-color: rgb(190, 176, 176);
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;}
+
+    body,html{height: 100%;}    
+
+.log{width: 30%;}
+.log1{width: 16%;}
+.m{margin-left: 10px;}
+
+.bbox{ height: 100%;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    margin-top: 5%;
+    }
+
+#icon{color: green;
+      font-size: 200px;} 
+      
+.fbbox{display: flex;
+        justify-content: center;
+}      
+.bt{justify-content: center;}
+
+#button1{width: 280px;
+    height: 30px;
+    background-color:  green; 
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius:4px 4px 4px 4px;
+    color:white ; 
+    box-shadow:  0px 10px 18px   rgb(106, 100, 100);
+    } 
+
+    .desktop{padding-bottom: 100px;}
