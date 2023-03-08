@@ -92,11 +92,11 @@ body,html{height: 100%;}
     .m{margin-left: 178px;}
      
     }
-
+/* 
     @media screen and (max-width:1030px) {
        .m{margin-left: 170px;}
-       #username{margin-left: 60px;}
-       #password{margin-left: 60px;}
+       #username{margin-left: 120px;}
+       #password{margin-left: 120px;}
        #button1{margin-left: 80px;
               border-radius: 10px; }
        #input3, #input4{ background-color:rgb(190, 176, 176) ;
@@ -112,42 +112,43 @@ body,html{height: 100%;}
 
 @media screen and (max-width:1030px) {
        .m{margin-left: 170px;}
-       #username{margin-left: 50px;}
-       #password{margin-left: 50px;}
+       #username{margin-left: 120px;}
+       #password{margin-left: 120px;}
        #button1{margin-left: 70px;}
        .m{margin-left:130px ;}
-       .sider{margin-top: 8%;}
+       .sider{margin-top: 8%;
+              width: 800px;}
               
        }
 
    @media screen and (max-width:980px) {
        .sider{margin-top: 8%;}
-       #username{margin-left: 40px;}
-       #password{margin-left: 40px;}
+       #username{margin-left: 120px;}
+       #password{margin-left: 120px;}
        #button1{margin-left: 60px;}
               
        }
 
        @media screen and (max-width:960px) {
               .sider{margin-top: 8%;}
-              #username{margin-left: 30px;}
-              #password{margin-left: 30px;}
+              #username{margin-left: 120px;}
+              #password{margin-left: 120px;}
               #button1{margin-left: 50px;}
                      
               }
 
        @media screen and (max-width:920px) {
               .sider{margin-top: 8%;}
-              #username{margin-left: 20px;}
-              #password{margin-left: 20px;}
+              #username{margin-left: 120px;}
+              #password{margin-left: 120px;}
               #button1{margin-left: 40px;}
                      
               }          
 
        @media screen and (max-width:880px) {
               .sider{margin-top: 8%;}
-              #username{margin-left: 10px;}
-              #password{margin-left: 10px;}
+              #username{margin-left: 120px;}
+              #password{margin-left: 120px;}
               #button1{margin-left: 30px;}
               .lp{font-size: 25px;}
                      
@@ -155,13 +156,13 @@ body,html{height: 100%;}
               
        @media screen and (max-width:880px) {
               .sider{margin-top: 8%;}
-              #username{margin-left: 10px;}
-              #password{margin-left: 10px;}
+              #username{margin-left: 120px;}
+              #password{margin-left: 120px;}
               #button1{margin-left: 30px;}
               .lp{font-size: 25px;}
               .m{margin-left: 115px;}
                      
-              }     
+              }      */
               
        /* @media screen and (max-width:840px) {
               .sider{margin-top: 8%;}
@@ -174,8 +175,11 @@ body,html{height: 100%;}
               }   */
 
        @media screen and (max-width:1050px) {
+              .bgdesktop{background-color: rgb(190, 176, 176);
+                         background-image: none;}
               .sider{margin-top: 15%;
-                     height: 550px;}
+                     height: 550px;
+                     border: none;}
               #input3{width: 510px;
                             height: 35px;}
               #input4{width: 510px;
